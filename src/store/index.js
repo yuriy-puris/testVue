@@ -56,9 +56,6 @@ const store = new Vuex.Store({
     SET_ACTIVE_COUNTRY(state, country) {
       state.activeCountry = country
     },
-    SET_ACTIVE_CITY(state, city) {
-      state.activeCity = city
-    }
   }
 })
 

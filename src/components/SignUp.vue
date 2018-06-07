@@ -178,6 +178,7 @@ export default {
             return true
       }
       this.errors = []
+      this.success = false
       if(!this.login) this.errors.push("Login")
       if(!this.email) this.errors.push("E-mail")
       if(!this.password) this.errors.push("Password")
@@ -186,9 +187,6 @@ export default {
     setCountry(value) {
       this.$store.commit('SET_ACTIVE_COUNTRY', value)
     },
-    setCity(value) {
-      this.$store.commit('SET_ACTIVE_CITY', value)
-    }
   }
 }
 </script>
